@@ -1,0 +1,405 @@
+.nav_links {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.5s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgb(30, 146, 192);
+    text-decoration: underline;
+}
+
+li,a {
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 10%;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family:'montserrat';
+    padding: 0;
+    margin: 0; 
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 900;
+    text-shadow: 2PX 3px #110f0f;
+}
+
+h1:hover {
+    color: #dbdef3;
+    text-decoration: underline 3.5px;
+    opacity: .6;
+    transition: all 0.8s ease 0s;
+}
+
+#welcome-title {
+    background-image: url("Photo\ by\ Zetong\ Li\ on\ Unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 85vh;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline 2px;
+}
+
+#intro {
+    background-color: black;
+    color: whitesmoke;
+    font-family:'montserrat';
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: large;
+    padding: 30px 5%;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+   /* FIX THE QUOTE SECTION TO MAKE IT MORE ASTHETIC   */
+
+#quote {
+    background-color: black;
+    color: whitesmoke;
+    font-family:'montserrat';
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
+}
+
+#quote-output {
+    font-size: 25px;
+    font-style: italic;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+    /* added code below
+    font-style: italic;
+    font-size: 25px;
+    background-color: black;
+    animation-name: move-right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(70px);
+    }
+  }
+  
+  */
+  
+#author-output {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+                   /* FIX THE ABOVE SECTION REGARDING THE QUOTE SECTION */
+
+#contact-container {
+    background-image: url("Red\ mountain\ waterfall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 85vh;
+    color: whitesmoke;
+}
+
+#contact-title {
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    font-size: 70px;
+    color: whitesmoke;
+    font-weight: 900;
+    text-shadow: 2PX 3px #110f0f;
+    text-decoration: none;
+}
+
+
+/* Find a way to adjust labels in the contact form, also organize the placements of each section in the code below */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body3 {
+    display: flex;
+    min-height: 85vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.753);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 15px;
+}
+
+.container .title{
+    font-size: 50px;
+    font-weight: 550;
+    position: relative;
+}
+
+.container form .user-details{
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    margin: 100px;
+    
+}
+
+form .user-details .input-box{
+    margin: 35px;
+    font-size: x-large;
+    font-weight: 500;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+.user-details .input-box input{
+    width: auto;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:#5b717a50 ;
+    padding:  20px 30px;
+    transition: 0.6s ease-in-out;
+}
+
+form .button{
+    height: 45px;
+    width: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:antiquewhite;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(130deg, #8193a0, #3825031e );
+}
+
+form .button input:hover{
+    background: linear-gradient(-130deg, #8193a0, #3825031e);
+}
+
+/* Adjust/organize the contact form section above*/
+
+
+.hidden {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.show {
+    opacity: 4;
+}
+
+/* below is the style section for the about me page add image slide/gallery figure out the reason why the buttons are stretched down the page, 
+(could it be the input section from the contact page?) */
+
+#body2 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    ;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: solid 2px whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: whitesmoke;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: whitesmoke;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: whitesmoke;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: whitesmoke;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: whitesmoke;
+}
+
+    /* below is the media queries, make sure to adjust to make the page more responsive 
+    for the following:
+    form section...
+    about section...
+    
+    */
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}

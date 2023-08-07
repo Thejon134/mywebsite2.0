@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal about page, it allows the users to take a glimpse about me">
+    <link rel= "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Personal Website (About page)</title>
+        
+    <title>About Page</title>
+</head>
+<body>
+
+                        <!--Nav bar place here-->
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<!--Figure out how to add toggle nav sidebar to the right side w/ button dropdown-->
+    </header>
+    
+
+    <!-- create a good layout for this page, consisting of personal achievements, life experiences and a self paragraph
+    also pick good pics for this section for the image slider section-->
+
+    
+<div id="body2">
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+        <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+            <div class="slide first">
+                <img src="Photo by Florian van Duyn on Unsplash.jpg" alt="fall mountains">
+            </div>
+            <div class="slide">
+                <img src="Photo by Redd F on Unsplash.jpg" alt="blue mountains">
+            </div> 
+            <div class="slide"> 
+                <img src="Photo by JOHN TOWNER on Unsplash.jpg" alt="foggy forest">
+            </div>
+            <div class="slide"> 
+                <img src="Photo by Tim Stief on Unsplash.jpg" alt="winter mountains">
+            </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        <!--automatic navigation end -->
+        </div>
+        <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+</div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+     }, 5000);   
+    </script>
+
+    <!--Fix the css side to match the transition from the other pages.Also figure out why the button is 
+    stretching down the page-->
+
+    </body>
+
+</html>
